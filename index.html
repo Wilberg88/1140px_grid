@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>1140px CSS Grid</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <!--[if lt IE 9]> 
+   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+   <![endif]-->
+   <!--[if lt IE 9]>
+       <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+   <![endif]-->
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="grid.css">
+</head>
+<style>
+  * {
+    transition: all .5s; 
+    -webkit-transition: all .5s; 
+    -o-transition: all .5s;
+  }
+
+  body {
+    font: 1em 'Raleway', Arial, Helvetica, sans-serif; 
+    color: #666666; 
+    background-color: #fff;
+  }
+
+  .container p {
+    background-color: #e9e8e8;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .container h2 {
+    font-size: 1.5em;
+    color: #000;
+    margin-top: 20px;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col12"><h2>Example 12 columns</h2></div>
+    </div>
+    <div class="row">
+        <div class="col1"><p>col1</p></div>
+        <div class="col2"><p>col2</p></div>
+        <div class="col3"><p>col3</p></div>
+        <div class="col4"><p>col4</p></div>
+        <div class="col2"><p>col2</p></div>
+    </div>
+    <div class="row">
+        <div class="col6"><p>col6</p></div>
+        <div class="col6"><p>col6</p></div>
+    </div>
+    <div class="row">
+        <div class="col5"><p>col7</p></div>
+        <div class="col7"><p>col5</p></div>
+    </div>
+    <div class="row">
+        <div class="col8"><p>col8</p></div>
+        <div class="col4"><p>col4</p></div>
+    </div>
+    <div class="row">
+        <div class="col1"><p>col1</p></div>
+        <div class="col1"><p>col1</p></div>
+        <div class="col8"><p>col8</p></div>
+        <div class="col1"><p>col1</p></div>
+        <div class="col1"><p>col1</p></div>
+    </div>
+    <div class="row">
+        <div class="col12"><p>col12</p></div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</body>
+</html>
